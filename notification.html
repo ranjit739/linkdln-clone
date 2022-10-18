@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkdln</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custiom responsive css -->
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <!-- Navigation Section Start -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="./index.html" class="logo"><img src="./assets/images/logo.png"></a>
+                <div class="seach-box">
+                    <img src="./assets/images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="index.html"><img
+                                src="./assets/images/home.png"><span>Home</span></a></li>
+                    <li><a href="./network.html"><img src="./assets/images/network.png"><span>My Network</span></a></li>
+                    <li><a href="./jobs.html"><img src="./assets/images/jobs.png"><span>Jobs</span></a></li>
+                    <li><a href="./message.html"><img src="./assets/images/message.png"><span>Messaging</span></a></li>
+                    <li><a href="notification.html" class="active-link"><img
+                                src="./assets/images/notification.png" ><span>Notification</span></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="online">
+                    <img src="./assets/images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                </div>
+
+            </div>
+            <!-- ----------------profile droup down menu----------------- -->
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="./assets/images/user-1.png" alt="">
+                        <div>
+                            <h3>Ranjit Gawande</h3>
+                            <a href="./profile.html">See your Profile</a>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/feedback.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/setting.png" alt="">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/help.png" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/display.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Navigation Section End  -->
+
+    <div class="container">
+
+        <!-- -------left-sidebar------ -->
+        <div class="left-sidebar">
+            <div class="notification">
+                <h4 class="text-center">Notification</h4>
+                <h5 class="text-center" class="text-center">You have no new notifications</h5>
+                <br>
+                <hr>
+
+                <div class="improvr-notf">
+                    <p class="text-center">Improve your notifications</p>
+                    <h4 class="text-center view-setting"> View Setting</h4>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- ------main-content-----  -->
+        <div class="main-content">
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/r5.jpg" alt="">
+                    <div>
+                        <div class="name-time">
+                            <h1>Benjamin Leo</h1> <small>h1 <br>...</small>
+                        </div>
+                        <small>hello all, looking for urgent html web designer who can start work from now, i will
+                            provide XD file, need to make same like XD, there will be some animation work also, only
+                            apply if you can start now and can finish before 8:00 PM thanks</small>
+
+                    </div>
+
+                </div>
+                <hr>
+                <br>
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/r6.jpg" alt="">
+                    <div>
+                        <br>
+                        <div class="name-time">
+                            <p class="job-text">Your Job Alert for java developer in
+                                Maharashtra ,India </p><small>h1 <br>...</small>
+                        </div>
+                        <div> <button class="view-btn">View 4 Job</button></div>
+                        <br>
+                        <small>hello all, looking for urgent html web designer who can start work from now, i will
+                            s</small>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/r8.jpg" alt="">
+                    <div>
+                        <br>
+                        <div class="name-time">
+                            <p class="job-text">Your Job Alert for web developer in
+                                Maharashtra ,India </p><small>h1 <br>...</small>
+                        </div>
+                        <div> <button class="view-btn">View 4 Job</button></div>
+                        <br>
+                        <small>hello all, looking for urgent html web designer who can start work from now, i will
+                            s</small>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/r5.jpg" alt="">
+                    <div>
+                        <div class="name-time">
+                            <h1>Raghini  Deshmukh</h1> <small>h1 <br>...</small>
+                        </div>
+                        <small> Method To Madness is a multidisciplinary consulting firm, that aims to help clients
+                            expand their horizons to explore and reach new heights in the global marketplace.</small>
+
+                    </div>
+
+                </div>
+                <hr>
+                <br>
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/rj1.jpg" alt="">
+                    <div>
+                        <div class="name-time">
+                            <h1>Benjamin Leo</h1> <small>h1 <br>...</small>
+                        </div>
+                        <small>hello all, looking for urgent html web designer who can start work from now, i will
+                            provide XD file, need to make same like XD, there will be some animation work also, only
+                            apply if you can start now and can finish before 8:00 PM thanks</small>
+
+                    </div>
+
+                </div>
+                <hr>
+                <br>
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/rj2.jpg" alt="">
+                    <div>
+                        <br>
+                        <div class="name-time">
+                            <p class="job-text">Your Job Alert for java developer in
+                                Maharashtra ,India </p><small>h1 <br>...</small>
+                        </div>
+                        <div> <button class="view-btn">View 4 Job</button></div>
+                        <br>
+                        <small>hello all, looking for urgent html web designer who can start work from now, i will
+                            s</small>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/rj3.jpg" alt="">
+                    <div>
+                        <br>
+                        <div class="name-time">
+                            <p class="job-text">Your Job Alert for web developer in
+                                Maharashtra ,India </p><small>h1 <br>...</small>
+                        </div>
+                        <div> <button class="view-btn">View 4 Job</button></div>
+                        <br>
+                        <small>hello all, looking for urgent html web designer who can start work from now, i will
+                            s</small>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="post-author">
+                    <img src="./assets/images/recommend-job/r9.jpg" alt="">
+                    <div>
+                        <div class="name-time">
+                            <h1>Raghini  Deshmukh</h1> <small>h1 <br>...</small>
+                        </div>
+                        <small> Method To Madness is a multidisciplinary consulting firm, that aims to help clients
+                            expand their horizons to explore and reach new heights in the global marketplace.</small>
+
+                    </div>
+
+                </div>
+                <hr>
+                <br>
+            </div>
+
+                    </div>
+
+
+
+
+        <!-- -------right-sidebar--------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="./assets/images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High Demand for Skilled manpower</a>
+                <span>1d ago &middot; 11,934 readers</span>
+
+                <a href="#">Careers Growing horizontaly too</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Less Work for visa us more for UK</a>
+                <span>18h ago &middot; 12,934 readers</span>
+
+                <a href="#">More hiring = more confidance?</a>
+                <span>12h ago &middot; 934 readers</span>
+
+                <a href="#">Gautam Adani world third richest</a>
+                <span>1h ago &middot; 12,934 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad&middot;&middot;&middot;</small>
+                <p>Master the 5 principle of web design</p>
+                <div>
+                    <img src="./assets/images/user-1.png">
+                    <img src="./assets/images/mi-logo.png">
+                </div>
+                <b>brand and Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+
+
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accebility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+                <div class="cpyright-msg">
+                    <img src="./assets/images/logo.png">
+                    <p>Linkedup &#169; 2022 All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu")
+        }
+    </script>
+
+    <script>
+        let sidebarActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+
+        function toggleActivity() {
+
+            sidebarActivity.classList.toggle("open-activity");
+            if (sidebarActivity.classList.contains("open-activity")) {
+                moreLink.innerHTML = "Show less <b>-</b>";
+            }
+            else {
+                moreLink.innerHTML = "Show more <b>+</b>";
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

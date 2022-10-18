@@ -1,0 +1,156 @@
+/* -------------media query for small device----------- */
+@media only screen and (max-width:766px) {
+    .seach-box {
+        background: transparent;
+        width: auto;
+        padding: 0px;
+    }
+
+    .seach-box input {
+        width: 0px;
+        padding: 0px;
+    }
+
+    .navbar-center ul li a span {
+        display: none;
+    }
+
+    .navbar-center ul li a {
+        padding: 0px !important;
+        margin: 5px !important;
+    }
+
+    .nav-profile-img {
+        width: 30px;
+    }
+
+    .container {
+        padding: 15px 3%;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+
+    .main-content {
+        flex-basis: 100%;
+        margin-top: 20px;
+
+    }
+
+    .post-stats div {
+        margin: 2px 0px;
+    }
+
+    .post-activity-link span {
+        display: none;
+    }
+
+    .post-activity-link img {
+        margin-right: 0px;
+    }
+
+    /* -----------profile page------ */
+    .profile-main,
+    .profile-sidebar {
+        flex-basis: 100%;
+    }
+
+    .profile-containe {
+        font-size: 14px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        margin-top: -50px;
+    }
+
+    .profile-discription {
+        font-size: 14px;
+    }
+
+    #showMoreLink {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+
+    }
+
+    .sidebar-activity {
+        display: none;
+    }
+
+    .sidebar-activity.open-activity {
+        display: block;
+
+    }
+
+/* __________Network page_____________ */
+.network-box{
+    display: block;
+    
+}
+.main-content-1{
+    flex-basis: 100%;
+    margin-top: 50px;
+}
+.left-sidebar {
+    flex-basis: 100%;
+ 
+}
+.network-box{
+    display:block;
+    
+}
+
+
+/* message page sayali deshmukh div */
+.border-line{
+    border-bottom: 1px solid black;
+    height: 0px;
+    width: 50px;
+    }
+    .btline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/* nofication left box */
+.notification{
+    margin-top: 30px;
+}
+.main-content-1{
+    margin-top: 20px;
+    
+}
+.main-content-m1 {
+    flex-basis: 100%;
+    margin-top: 10px;
+}
+.message-top {
+    margin-top: 20px;
+}
+
+}
+
+@media(max-width:1110px){
+    .network-box{
+        display: block;
+    }
+    .hr-cover{
+        /* width: 100%; */
+        width: 100%;
+        height: 80px;
+    }
+    .post-space{
+        padding: 2px
+    
+    }
+
+}
+

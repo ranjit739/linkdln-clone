@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkdln</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custiom responsive css -->
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <!-- Navigation Section Start -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="./index.html" class="logo"><img src="./assets/images/logo.png"></a>
+                <div class="seach-box">
+                    <img src="./assets/images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="#" class="active-link"><img src="./assets/images/home.png"><span>Home</span></a></li>
+                    <li><a href="#"><img src="./assets/images/network.png"><span>My Network</span></a></li>
+                    <li><a href="#"><img src="./assets/images/jobs.png"><span>Jobs</span></a></li>
+                    <li><a href="#"><img src="./assets/images/message.png"><span>Messaging</span></a></li>
+                    <li><a href="#"><img src="./assets/images/notification.png"><span>Notification</span></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="online">
+                    <img src="./assets/images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                </div>
+
+            </div>
+            <!-- ----------------profile droup down menu----------------- -->
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="./assets/images/user-1.png" alt="">
+                        <div>
+                            <h3>Ranjit Gawande</h3>
+                            <a href="./profile.html">See your Profile</a>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/feedback.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/setting.png" alt="">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/help.png" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/display.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Navigation Section End  -->
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="./assets/images/cover-pic.png" width="100%">
+                <div class="profile-container-inner">
+                    <img src="./assets/images/user-1.png" class="profile-pic">
+                    <h1>Ranjit Gawande</h1>
+                    <b>Web Desiner At IT Spark</b>
+                    <p>Indore, India &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="./assets/images/user-2.png">
+                        <span>1 Mutual Connection:Orlanddo Diggs</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="./assets/images/connect.png">Connect</a>
+                        <a href="#"><img src="./assets/images/chat.png">Message</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-discription">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur pariatur excepturi distinctio sequi
+                    ullam consequatur ex labore quasi maiores a?</p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+
+            <div class="profile-discription">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/microsoft.png">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>IT Spark &middot; Full-time</b>
+                        <b>JUne 2022 - Present &middot; 4 months</b>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur pariatur excepturi
+                            distinctio sequi
+                            ullam consequatur ex labore quasi maiores a?</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile-discription">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/slack.png">
+                    <div>
+                        <h3>Full Stack Developer</h3>
+                        <b>Board Infinity &middot; Full-time</b>
+                        <b>March 2021 - March 2022&middot; 1 Year</b>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur pariatur excepturi
+                            distinctio sequi
+                            ullam consequatur ex labore quasi maiores a?</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="profile-discription">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/google.png">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>IT Spark &middot; Full-time</b>
+                        <b>JUne 2022 - Present &middot; 4 months</b>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur pariatur excepturi
+                            distinctio sequi
+                            ullam consequatur ex labore quasi maiores a?</p>
+
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all experience <img src="./assets/images/right-arrow.png"
+                        alt=""></a>
+            </div>
+
+
+            <!-- -------------Eduction section Start---------- -->
+            <div class="profile-discription">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/stanford.png">
+                    <div>
+                        <h3>SGBAU University</h3>
+                        <b>BE Computer Science & Engineering</b>
+                        <b>2016-2020</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/north.png">
+                    <div>
+                        <h3>Mumbai University</h3>
+                        <b>Polytechnic</b>
+                        <b>2013-2016</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/mit.png">
+                    <div>
+                        <h3>Amaravati University</h3>
+                        <b>HSS</b>
+                        <b>2011-2013</b>
+
+                    </div>
+                </div>
+            </div>
+            <div class="profile-discription">
+                <h2>Skills</h2>
+                <a href="#" class="skill-btn">HTML</a>
+                <a href="#" class="skill-btn">CSS</a>
+                <a href="#" class="skill-btn">Bootstrap 5</a>
+                <a href="#" class="skill-btn">React</a>
+                <a href="#" class="skill-btn">Node</a>
+                <a href="#" class="skill-btn">Express</a>
+            </div>
+            <div class="profile-discription">
+                <h2>Languages</h2>
+                <a href="#" class="Languages-btn">English</a>
+                <a href="#" class="Languages-btn">Hindi</a>
+                <a href="#" class="Languages-btn">Marathi</a>
+
+            </div>
+        </div>
+
+
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad&middot;&middot;&middot;</small>
+                <p>Master the 5 principle of web design</p>
+                <div>
+                    <img src="./assets/images/user-1.png">
+                    <img src="./assets/images/mi-logo.png">
+                </div>
+                <b>brand and Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-3.png">
+                    <div>
+                        <h2>Samuel Tony</h2>
+                        <p>Head of Marketing of Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <!-- ------second people------- -->
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-4.png">
+                    <div>
+                        <h2>Priyanak Deshmukh</h2>
+                        <p>Head of Marketing of Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <!-- ------Third people------- -->
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-5.png">
+                    <div>
+                        <h2>Pravin Deshmukh</h2>
+                        <p>Head of Marketing of Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <!-- ------Fourth people------- -->
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-2.png">
+                    <div>
+                        <h2>Ankit Patil</h2>
+                        <p>Head of Marketing of Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------profile-footer------------- -->
+<div class="profile-footer">
+    <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accebility</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+        <div class="cpyright-msg">
+            <img src="./assets/images/logo.png">
+            <p>Linkedup &#169; 2022 All right reserved</p>
+        </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu")
+        }
+    </script>
+
+
+<script>
+    console.log(i);
+    var i=10;
+</script>
+</body>
+
+</html>

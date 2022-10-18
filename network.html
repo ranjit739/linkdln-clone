@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkdln</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custiom responsive css -->
+
+    <link rel="stylesheet" href="./network.css">
+
+    <link rel="stylesheet" href="./responsive.css">
+
+</head>
+
+<body>
+    <!-- Navigation Section Start -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="./index.html" class="logo"><img src="./assets/images/logo.png"></a>
+                <div class="seach-box">
+                    <img src="./assets/images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="index.html"><img
+                                src="./assets/images/home.png"><span>Home</span></a></li>
+                    <li><a href="./network.html" class="active-link"><img src="./assets/images/network.png"><span>My Network</span></a></li>
+                    <li><a href="./jobs.html"><img src="./assets/images/jobs.png"><span>Jobs</span></a></li>
+                    <li><a href="./message.html"><img src="./assets/images/message.png"><span>Messaging</span></a></li>
+                    <li><a href="./notification.html"><img src="./assets/images/notification.png"><span>Notification</span></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="online">
+                    <img src="./assets/images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                </div>
+
+            </div>
+            <!-- ----------------profile droup down menu----------------- -->
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="./assets/images/user-1.png" alt="">
+                        <div>
+                            <h3>Ranjit Gawande</h3>
+                            <a href="./profile.html">See your Profile</a>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/feedback.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/setting.png" alt="">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/help.png" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/display.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Navigation Section End  -->
+
+
+
+
+    <!-- ------------profile-footer------------- -->
+
+    <div class="container">
+
+        <!-- -------left-sidebar------ -->
+        <div class="left-sidebar">
+            <div class="side-profile-box">
+                <img src="./assets/images/cover-pic.png" width="100%">
+                <div class="side-bar-profile-info">
+                    <img src="./assets/images/user-1.png" alt="">
+                    <h1>Ranjit Gawande</h1>
+                    <h3>Web Desiner at IT Spark Technology</h3>
+                    <ul>
+                        <li>Your Profile view<span>52</span></li>
+                        <li>Your post view<span>810</span></li>
+                        <li>Your connection <span>210</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="./assets/images/items.png">My items</a>
+                    <a href="#"><img src="./assets/images/premium.png">Try premium</a>
+                </div>
+            </div>
+            <!-- ---------side-profile-box END-------- -->
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT </h3>
+                <a href="#"><img src="./assets/images/recent.png">Web Developement</a>
+                <a href="#"><img src="./assets/images/recent.png">Usere Interface</a>
+                <a href="#"><img src="./assets/images/recent.png">Online Learning</a>
+                <a href="#"><img src="./assets/images/recent.png">Learn Online</a>
+                <a href="#"><img src="./assets/images/recent.png">Group Learning</a>
+                <a href="#"><img src="./assets/images/recent.png">Code Better</a>
+                <h3>GROUP </h3>
+                <a href="#"><img src="./assets/images/group.png">Web Design Group</a>
+                <a href="#"><img src="./assets/images/group.png">HTML CSS Learner</a>
+                <a href="#"><img src="./assets/images/group.png">Python Javascript Group</a>
+                <a href="#"><img src="./assets/images/group.png">Learn Coading</a>
+                <h3>HASHTAG </h3>
+                <a href="#"><img src="./assets/images/hashtag.png">Web Design Group</a>
+                <a href="#"><img src="./assets/images/hashtag.png">HTML CSS Learner</a>
+                <a href="#"><img src="./assets/images/hashtag.png">Python Javascript Group</a>
+                <div class="discover-more-link">
+                    <a href="">Discover More</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
+        </div>
+
+    <!-- ------main-content-----  -->
+    <div class="main-content-1">
+        <div class="box">
+            <h3>No Pending invitation</h3>
+            <h3>Manage</h3>
+        </div>
+        <div class="parrent-network-box">
+
+
+            <div class="network-box">
+                <div class="side-profile-box">
+                    <img src="./assets/images/hr/hr_bg/user1.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/hr/user-1.png" alt="">
+                        <h1>Priyanka Deshmukh</h1>
+                        <h3>HR Talent Acquisition || HCl Techonology Hiring Professional</h3>
+                        <ul>
+                            <li>Talk About #hr,#freshers</li>
+                            <li>HumanResource #hiringmanager</li>
+                        </ul>
+                        <button class="follow-btn data" onclick="myFunction(this)">Follow</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/hr/hr_bg/user2.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/hr/download.jpg" alt="">
+
+                        <h1>Nikhil Chauhan</h1>
+                        <h3>HR Talent Acquisition || TCS Techonology Hiring Professional</h3>
+                        <ul>
+
+                            <li>Talk About #hr,#freshers</li>
+                            <li>HumanResource #hiringmanager</li>
+
+                        </ul>
+                        <button class="follow-btn data" onclick="myFunction(this)">Follow</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/hr/hr_bg/user3.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/user-4.png" alt="">
+                        <h1>Dipali Deshmukh</h1>
+                        <h3>HR Talent Acquisition || HCl Techonology Hiring Professional</h3>
+                        <ul>
+                            <li>.</li>
+                            <li>8451244 followers </li>
+
+                        </ul>
+                        <button class="follow-btn data" onclick="myFunction(this)">Follow</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- _______second row start______________ -->
+            <div class="network-box">
+                <div class="side-profile-box">
+                    <img src="./assets/images/hr/hr_bg/user4.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/user-5.png" alt="">
+                        <h1>Keshav Suman</h1>
+                        <h3>HR Talent Acquisition || Tech Mahindra</h3>
+                        <ul>
+                            <li>Talk About #hr,#freshers</li>
+                            <li>HumanResource #hiringmanager</li>
+                        </ul>
+                        <button class="follow-btn data" onclick="myFunction(this)">Follow</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/hr/hr_bg/user5.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/user-2.png" alt="">
+                        <h1>Ramesh Kanade</h1>
+                        <h3>Chasing Talent</h3>
+                        <ul>
+                            <li>Talk About #hr,#freshers</li>
+                            <li>HumanResource #hiringmanager</li>
+
+                        </ul><br>
+                        <button class="follow-btn data" onclick="myFunction(this)">Follow</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/hr/hr_bg/user6.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/hr/user-1.jpg" alt="">
+                        <h1>Ranjit Gawande</h1>
+                        <h3>HR Talent Acquisition || Tata Consultant</h3>
+                        <ul>
+                            <li>Talk About #hr,#freshers</li>
+                            <li>HumanResource #hiringmanager</li>
+                        </ul>
+                        <button class="follow-btn data" onclick="myFunction(this)">Follow</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- second row end -->
+
+            <!-- -----------third row for connect friends---------- -->
+
+            <div class="box box-heading">
+                <h3>People you may know from Sanmati College of Engineering, Sawargaon Barade, Washim</h3>
+                <h3>See All</h3>
+            </div>
+
+            <div class="network-box">
+                <div class="side-profile-box">
+                    <img src="./assets/images/student/student-bg/st1.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/student/student-pic/st1.jpg" alt="">
+                        <h1>Supriya Patil</h1>
+                        <h3>Design Engineer</h3>
+                        <h3>"Fresher looking for new job opportunities</h3>
+                        <ul>
+
+                            <li>Sanmati Engineering College</li>
+
+                        </ul>
+                        <button class="follow-btn connect" onclick="myconnect(this)">Connect</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/student/student-bg/st2.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/student/student-pic/st2.jpg" alt="">
+                        <h1>Ankur Khatri</h1>
+                        <h3>Student at Sanmati College of Engineering,</h3>
+                        <ul>
+                            <br>
+                            <li>Sanmati Engineering College</li>
+
+                        </ul>
+                        <button class="follow-btn connect" onclick="myconnect(this)">Connect</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/student/student-bg/st3.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/student/student-pic/st3.jpg" alt="">
+                        <h1>Priyanka Chauhan</h1>
+                        <h3>Web Developer</h3>
+                        <h3>"Fresher looking for new job opportunities</h3>
+                        <ul>
+
+                            <li>Sanmati Engineering College</li>
+                        </ul>
+                        <button class="follow-btn connect" onclick="myconnect(this)">Connect</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="network-box">
+                <div class="side-profile-box">
+                    <img src="./assets/images/student/student-bg/st4.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/student/student-pic/st4.jpg" alt="">
+                        <h1>Pavan Dhokane</h1>
+                        <h3>Design Engineer</h3>
+                        <h3>"Fresher looking for new job opportunities</h3>
+                        <ul>
+
+                            <li>Sanmati Engineering College</li>
+
+                        </ul>
+                        <button class="follow-btn connect" onclick="myconnect(this)">Connect</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/student/student-bg/st5.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/student/student-pic/st5.jpg" alt="">
+                        <h1>Rekha Agrawal</h1>
+                        <h3>Student at Sanmati College of Engineering,</h3>
+                        <ul>
+                            <br>
+                            <li>Sanmati Engineering College</li>
+
+                        </ul>
+                        <button class="follow-btn connect" onclick="myconnect(this)">Connect</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/student/student-bg/st6.jpg" class="hr-cover">
+                    <div class="side-bar-profile-info">
+                        <img src="./assets/images/student/student-pic/st6.jpg" alt="">
+                        <h1>Ranjit Gawande</h1>
+                        <h3>Web Developer</h3>
+                        <h3>"Fresher looking for new job opportunities</h3>
+                        <ul>
+
+                            <li>Sanmati Engineering College</li>
+                        </ul>
+                        <button class="follow-btn connect" onclick="myconnect(this)">Connect</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- -----------Audio Events---------- -->
+            <div class="box box-heading">
+                <h3>Audio events for you</h3>
+                <h3>See All</h3>
+            </div>
+            <div class="network-box">
+                <div class="side-profile-box">
+                    <img src="./assets/images/audio/au1.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+
+                        <h1>[Audio Event] 10+ years at AWS❓Come meet our Builders #HereAtAWS.
+                        </h1>
+                        <ul>
+                            <li>
+                                <h3>Today, 2:00 PM</h3>
+                            </li>
+                            <li>129 attendees</li>
+                        </ul><br>
+                        <button class="follow-btn">View</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="side-profile-box">
+                    <img src="./assets/images/audio/audio-bg/au2.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+
+                        <h1>#BowTieTime - trends in HR and employee benefits For</h1>
+
+                        <ul>
+                            <li>
+                                <h3>Today, 2:00 PM</h3>
+                            </li>
+                            <li>129 attendees</li>
+                        </ul><br><br>
+                        <button class="follow-btn">View</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/audio/audio-bg/au3.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+
+                        <h1>{Audio} How to Start Your Career Change Few Days</h1>
+
+                        <ul>
+                            <li>
+                                <h3>Today, 2:00 PM</h3>
+                            </li>
+                            <li>129 attendees</li>
+                        </ul><br><br><br>
+                        <button class="follow-btn">View</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="network-box">
+                <div class="side-profile-box">
+                    <img src="./assets/images/audio/audio-bg/au4.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+
+                        <h1>Social Things: Chapter 6 with Vanessa Gartell</h1>
+
+                        <ul>
+                            <li>
+                                <h3>Today, 2:00 PM</h3>
+                            </li>
+                            <li>129 attendees</li>
+                        </ul><br>
+                        <button class="follow-btn">View</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="side-profile-box">
+                    <img src="./assets/images/audio/audio-bg/au5.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+
+                        <h1>ASK US ANYTHING : "How To Set Healthy Boundaries</h1>
+
+                        <ul>
+                            <li>
+                                <h3>Today, 2:00 PM</h3>
+                            </li>
+                            <li>129 attendees</li>
+                        </ul>
+                        <button class="follow-btn">View</button>
+                    </div>
+
+                </div>
+                <div class="side-profile-box">
+                    <img src="./assets/images/audio/audio-bg/au6.png" class="hr-cover">
+                    <div class="side-bar-profile-info">
+
+                        <h1>NEXT Michigan.news helping people live their best lives!</h1>
+
+                        <ul>
+                            <li>
+                                <h3>Today, 2:00 PM</h3>
+                            </li>
+                            <li>129 attendees</li>
+                        </ul>
+                        <button class="follow-btn">View</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script>
+        function myFunction(element) {
+            // console.log(element)
+            // let element = document.getElementsByClassName("data");
+            // for (let i = 0; i < element.length; i++) {
+            if (element.innerHTML === "Follow") {
+                element.innerHTML = "Following"
+            }
+            else {
+                element.innerHTML = "Follow";
+            }
+            // }
+        }
+
+
+        // connect function
+        function myconnect(element) {
+
+
+            if (element.innerHTML === "Connect") {
+                element.innerHTML = "Pending"
+            }
+            else {
+                element.innerHTML = "Connect";
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- test-code -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu")
+        }
+    </script>
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>

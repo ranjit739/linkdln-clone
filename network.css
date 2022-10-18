@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #5f5f5f;
+}
+
+a {
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+.container{
+display: flex;
+}
+.main-content-1{
+    flex-basis: 70%;
+    margin-top: 50px;
+}
+.parrent-network-box{
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%
+}
+.box{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.box h3{
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+.network-box{
+    display: flex;   
+}
+.box-heading{
+    margin-top: 25px;
+}
+.network-box .side-profile-box{
+    margin: 10px;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+ 
+}
+.network-box .side-profile-box:hover{
+    box-shadow: 4px 12px 13px -13px #111;  
+    border: 0.5px solid #777;
+}
+.follow-btn{
+    display: inline-block;
+    border: 1px solid #045be6;
+    border-radius: 30px;
+    padding: 5px 35px;
+    color: #045be6;
+    font-weight: 500;
+    margin: 20px auto 10px;
+}
+.hr-cover{
+    /* width: 100%; */
+    width: 100%;
+    height: 69px;
+}
+
+.side-bar-profile-info img {
+    width: 74px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px;
+    margin-top: -45px;
+}
+
+/* -------------job-page------------ */
+.sidebar-activity-job  {
+    border: 0.5px solid #ccc;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar-activity-job a {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #888;
+    margin: 20px 0;
+}
+
+.sidebar-activity-job a img {
+    width: 20px;
+    margin-right: 10px;
+
+}
+.recent-job{
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+ .recent-job .box{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+}
+.recent-job .box h3{
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.avai-job{
+    display: flex;
+   
+}
+.avai-job h4{
+    font-size: 14px;
+    color: #000000E6;
+}
+.avai-job h5{
+    color: #057642;
+    font-size: 12px;
+}
+.avai-job-parent{
+    padding: 15px;
+}
+.job-show-more{
+    background-color: #7c9ed6;
+    width: 20%;
+    cursor: pointer;
+margin: 20px;
+}
+.job-box{
+    padding: 15px;
+}
+.job-box h3{
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.green{
+    color: #057642; 
+    margin: 3px 0px;
+}
+.job-icons{
+    display: flex;
+    justify-content:space-between;
+}
+.post-space{
+    padding: 10px 25px 5px;
+
+}
+
+.sort-by hr {
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+.jobPost-icon{
+    margin-left: 30px;
+}
+.jobPost-icon img{
+    height: 0px;
+    width: 0px;
+
+
+}
+.post-space:hover .jobPost-icon img{
+    height: 25px;
+    width: 25px;
+}
+.mutual-pic{
+    display: flex;
+}
+.mutual-pic img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: -20px;
+    margin-top: 5px;
+    
+}
+.mutual-text{
+margin: 20px 25px;
+}
+.logo1{
+    margin-left: 10px;
+width: 14px !important;
+height: 14px;
+border-radius: 0% !important;
+
+}
+.text-logo{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+}
+/* .mutual-pic small{
+margin: 20px;
+} */
+
+/* --------------Message page Start------------------- */
+.post-spacem{
+    /* padding: 20px 0px;
+    background-color: white;
+    margin-top: 20px; */
+}
+.message-block{
+    margin-top: 20px;
+    /* padding: 20px 3px; */
+    padding: 0px 10px;
+    background-color: white;
+    height: 500px;
+    overflow-y: scroll;
+}
+.heading-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3px;
+}
+.heading-date small{
+    font-weight: bold;
+}
+.msearch-box{
+    margin-bottom: 10px;
+    position: sticky;
+    top: 16px;
+    margin-top: 10px
+
+
+}
+.message-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.m-top{
+    background-color: white;
+    position: sticky;
+    top: -1px;
+    margin-top: 5px;
+}
+
+
+/* message middle section start */
+.chat-box{
+    /* padding: 15px; */
+}
+.chat-box h3{
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.chat-box .chat-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+.chat-icons span{
+
+    padding: 5px;
+
+}
+
+.chat-icons span:hover{
+    background-color: #7c9ed6;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+
+/* search box */
+.nseach-box {
+    width: 250px;
+    border-radius: 20px;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+
+}
+
+.nseach-box img {
+    width: 14px;
+
+}
+
+.nseach-box input {
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: 0;
+}
+
+.border-line{
+border-bottom: 1px solid black;
+height: 0px;
+width:50px;
+margin: 5px;
+}
+.btline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name-time{
+    display: flex;
+}
+.msg-scroll{
+    overflow-y: scroll;
+    height: 300px;
+}
+.pic-logo{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.main-content-m1{
+    flex-basis: 47%;
+    margin-top: 50px;
+}

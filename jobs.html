@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkdln</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./network.css">
+    <!-- custiom responsive css -->
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+    <!-- Navigation Section Start -->
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="./index.html" class="logo"><img src="./assets/images/logo.png"></a>
+                <div class="seach-box">
+                    <img src="./assets/images/search.png">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="index.html"><img
+                                src="./assets/images/home.png"><span>Home</span></a></li>
+                    <li><a href="network.html"><img src="./assets/images/network.png"><span>My Network</span></a></li>
+                    <li><a href="jobs.html" class="active-link"><img src="./assets/images/jobs.png"><span>Jobs</span></a></li>
+                    <li><a href="message.html"><img src="./assets/images/message.png"><span>Messaging</span></a></li>
+                    <li><a href="notification.html"><img src="./assets/images/notification.png"><span>Notification</span></a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="online">
+                    <img src="./assets/images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+                </div>
+
+            </div>
+            <!-- ----------------profile droup down menu----------------- -->
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="./assets/images/user-1.png" alt="">
+                        <div>
+                            <h3>Ranjit Gawande</h3>
+                            <a href="./profile.html">See your Profile</a>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/feedback.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/setting.png" alt="">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/help.png" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/display.png" alt="">
+                        <p>Display & Accessibility</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="./assets/images/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Navigation Section End  -->
+
+    <div class="container">
+
+        <!-- -------left-sidebar------ -->
+        <div class="left-sidebar">
+
+            <!-- ---------side-profile-box END-------- -->
+
+            <div class="sidebar-activity-job" id="sidebarActivity">
+
+                <a href="#"><img src="./assets/images/job-icon/myjob.PNG">My Job</a>
+                <a href="#"><img src="./assets/images/job-icon/alert.PNG">Job alerts</a>
+                <a href="#"><img src="./assets/images/job-icon/sallary.PNG">Salary</a>
+                <a href="#"><img src="./assets/images/job-icon/skill-assest.PNG">Skill Assessments</a>
+                <a href="#"><img src="./assets/images/job-icon/interview.PNG">Interview Prep</a>
+                <a href="#"><img src="./assets/images/job-icon/resume.PNG">Resume Builder</a>
+
+                <a href="#"><img src="./assets/images/job-icon/job-guidance.PNG">Job Seeker Guidance</a>
+                <a href="#"><img src="./assets/images/job-icon/application-setting.PNG">Application Setting</a>
+
+            </div>
+           
+        </div>
+        <!-- ------main-content-----  -->
+        <div class="main-content">
+            <div class="recent-job">
+                <div class="box">
+                    <h3>Recent job searches</h3>
+                    <h3>Clear all</h3>
+                </div>
+                <div class="avai-job-parent">
+
+                    <div class="avai-job">
+                        <h4> java developer - </h4>
+                        <h5>143 new</h5>
+                    </div>
+                    <small>Alert On · Maharashtra, India</small>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+                    <!-- _____________second job_________________ -->
+
+                    <div class="avai-job">
+                        <h4> java developer - </h4>
+                        <h5>146 new</h5>
+                    </div>
+                    <small>Alert On · Maharashtra, India</small>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+                    <div class="avai-job">
+                        <h4> web developer - </h4>
+                        <h5>167 new</h5>
+                    </div>
+                    <small>Alert On · Maharashtra, India</small>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+                    <!-- ---------------third job-------- -->
+                    <div class="avai-job">
+                        <h4> frontend developer - </h4>
+                        <h5>173 new</h5>
+                    </div>
+                    <small>Alert On · India</small>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+                    <div>
+                        <details>
+                            <summary class="job-show-more" onclick="myconnect(this)">Show more</summary>
+                            <div class="avai-job">
+                                <h4> web developer - </h4>
+                                <h5>143 new</h5>
+                            </div>
+                            <small>Alert On · Maharashtra, India</small>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+                            <!-- _____________second job_________________ -->
+
+                            <div class="avai-job">
+                                <h4> web designer - </h4>
+                                <h5>146 new</h5>
+                            </div>
+                            <small>Alert On · Maharashtra, India</small>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+                            <!-- ---------------third job-------- -->
+                            <div class="avai-job">
+                                <h4> node js developer - </h4>
+                                <h5>173 new</h5>
+                            </div>
+                            <small>Alert On · India</small>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+                            <div class="avai-job">
+                                <h4> frontend developer - </h4>
+                                <h5>173 new</h5>
+                            </div>
+                            <small>Alert On · India</small>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+                        </details>
+                    </div>
+
+                </div>
+            </div>
+            <!-- --------------recomded for you start-------------- -->
+            <div class="recent-job">
+                <div class="job-box">
+                    <div class="job-icons">
+                        <h3>Recommended for you </h3>
+
+
+                    </div>
+
+                    <small>Based on your profile and search history</small>
+                </div>
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/rj1.jpg" alt="">
+                        <div>
+                            <h1>Software Engineer I - Frontend/Fullstack</h1>
+                            <small>Contentstack</small>
+                            <small>Mumbai, Maharashtra, India (Remote)</small>
+                            <small class="green"> 7 hours ago</small>
+                        </div>
+
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" alt="">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+
+                </div>
+                <!-- --------  recomnded second job------------- -->
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/rj2.jpg" alt="">
+                        <div>
+                            <h1>
+                                Web Developer I - Frontend/Fullstack</h1>
+                            <small>GalaxE.Solutions</small>
+                            <small>Bengaluru, Karnataka, India (Hybrid)</small>
+                            <small class="green"> 8 hours ago</small>
+                        </div>
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" class="eye">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+                    </div>
+
+                </div>
+                <!-- _____________ recomnded third job_________________ -->
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/rj3.jpg" alt="">
+                        <div>
+                            <h1>Software Engineer I - Frontend/Fullstack</h1>
+                            <small>Contentstack</small>
+                            <small>Mumbai, Maharashtra, India (Remote)</small>
+                            <small class="green"> 7 hours ago</small>
+                        </div>
+
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" alt="">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+
+                    </div>
+
+                </div>
+                <!-- --------  recomnded fourth job------------- -->
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/r5.jpg" alt="">
+                        <div>
+                            <h1>
+                                node Developer I - Frontend/Fullstack</h1>
+                            <small>GalaxE.Solutions</small>
+                            <small>Bengaluru, Karnataka, India (Hybrid)</small>
+                            <small class="green"> 8 hours ago</small>
+                        </div>
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" class="eye">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+                    </div>
+
+                </div>
+                <div>
+                    <details>
+                        <summary class="job-show-more" onclick="myconnect(this)">Show more</summary>
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/r6.jpg" alt="">
+                                <div>
+                                    <h1>Software Engineer I - Frontend/Fullstack</h1>
+                                    <small>Contentstack</small>
+                                    <small>Mumbai, Maharashtra, India (Remote)</small>
+                                    <small class="green"> 7 hours ago</small>
+                                </div>
+
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" alt="">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                                </div>
+
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+
+                            </div>
+
+                        </div>
+                        <!-- --------  recomnded second job------------- -->
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/r7.jpg" alt="">
+                                <div>
+                                    <h1>
+                                        Web Developer</h1>
+                                    <small>GalaxE.Solutions</small>
+                                    <small>Bengaluru, Karnataka, India (Hybrid)</small>
+                                    <small class="green"> 8 hours ago</small>
+                                </div>
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" class="eye">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                            </div>
+
+                        </div>
+                        <!-- _____________ recomnded third job_________________ -->
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/r8.jpg" alt="">
+                                <div>
+                                    <h1>Software Engineer I - Frontend/Fullstack</h1>
+                                    <small>Contentstack</small>
+                                    <small>Mumbai, Maharashtra, India (Remote)</small>
+                                    <small class="green"> 7 hours ago</small>
+                                </div>
+
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" alt="">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                                </div>
+
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+
+                            </div>
+
+                        </div>
+                        <!-- --------  recomnded fourth job------------- -->
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/r9.jpg" alt="">
+                                <div>
+                                    <h1>
+                                        Web Developer</h1>
+                                    <small>GalaxE.Solutions</small>
+                                    <small>Bengaluru, Karnataka, India (Hybrid)</small>
+                                    <small class="green"> 8 hours ago</small>
+                                </div>
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" class="eye">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                            </div>
+
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+
+
+
+            <!-- Hiring in your network----------- -->
+            <div class="recent-job">
+                <div class="job-box">
+                    <div class="job-icons">
+                        <h3>Hiring in your network</h3>
+
+
+                    </div>
+
+                    <small>Explore relevant jobs in your network</small>
+                </div>
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/hrd1.jpg" alt="">
+                        <div>
+                            <h1>javascript Developer</h1>
+                            <small>Contentstack</small>
+                            <small>Mohali district, Punjab, India (On-site)</small>
+                            <div class="mutual-pic"><img src="./assets/images/student/student-pic/st1.jpg">
+                                <img src="./assets/images/student/student-pic/st2.jpg">
+                                <div></div><small class="mutual-text"> 2 mutual connections with the hiring team</small>
+                            </div>
+                            <div class="text-logo">
+                                <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                        class="logo1">Easy Apply</span>
+                            </div>
+                        </div>
+
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" alt="">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+
+                </div>
+
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/hrd2.jpg" alt="">
+                        <div>
+                            <h1>Software Developer</h1>
+                            <small>Contentstack</small>
+                            <small>Mohali district, Punjab, India (On-site)</small>
+                            <div class="mutual-pic"><img src="./assets/images/student/student-pic/st3.jpg">
+                                <img src="./assets/images/student/student-pic/st4.jpg">
+                                <img src="./assets/images/student/student-pic/st5.jpg">
+                                <div></div><small class="mutual-text"> 3 mutual connections with the hiring team</small>
+                            </div>
+                            <div class="text-logo">
+                                <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                        class="logo1">Easy Apply</span>
+                            </div>
+                        </div>
+
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" alt="">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+
+                </div>
+
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/hrd3.jpg" alt="">
+                        <div>
+                            <h1>frontend Developer</h1>
+                            <small>Contentstack</small>
+                            <small>Mohali district, Punjab, India (On-site)</small>
+                            <div class="mutual-pic"><img src="./assets/images/student/student-pic/st1.jpg">
+                                <img src="./assets/images/student/student-pic/st2.jpg">
+                                <img src="./assets/images/student/student-pic/st4.jpg">
+                                <div></div><small class="mutual-text"> 3 mutual connections with the hiring team</small>
+                            </div>
+                            <div class="text-logo">
+                                <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                        class="logo1">Easy Apply</span>
+                            </div>
+                        </div>
+
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" alt="">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+
+                </div>
+
+                <div class="post-space">
+
+                    <div class="post-author">
+                        <img src="./assets/images/recommend-job/hrd4.jpg" alt="">
+                        <div>
+                            <h1>Web Developer</h1>
+                            <small>Contentstack</small>
+                            <small>Mohali district, Punjab, India (On-site)</small>
+                            <div class="mutual-pic"><img src="./assets/images/student/student-pic/st5.jpg">
+                                <img src="./assets/images/student/student-pic/st3.jpg">
+                                <div></div><small class="mutual-text"> 3 mutual connections with the hiring team</small>
+                            </div>
+                            <div class="text-logo">
+                                <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                        class="logo1">Easy Apply</span>
+                            </div>
+                        </div>
+
+                        <div class="jobPost-icon">
+                            <img src="./assets/images/job-icon/hidden.png" alt="">
+                            <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="sort-by">
+                        <hr>
+                        <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                    </div>
+
+                </div>
+               
+                
+                <div>
+                    <details>
+                        <summary class="job-show-more" onclick="myconnect(this)">Show more</summary>
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/hrd1.jpg" alt="">
+                                <div>
+                                    <h1>node js Developer</h1>
+                                    <small>Contentstack</small>
+                                    <small>Mohali district, Punjab, India (On-site)</small>
+                                    <div class="mutual-pic"><img src="./assets/images/student/student-pic/st1.jpg">
+                                        <img src="./assets/images/student/student-pic/st4.jpg">
+                                        <div></div><small class="mutual-text"> 2 mutual connections with the hiring team</small>
+                                    </div>
+                                    <div class="text-logo">
+                                        <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                                class="logo1">Easy Apply</span>
+                                    </div>
+                                </div>
+        
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" alt="">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+        
+                                </div>
+        
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+        
+                        </div>
+        
+                        <div class="post-space">
+        
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/hrd5.jpg" alt="">
+                                <div>
+                                    <h1>Web Developer</h1>
+                                    <small>Contentstack</small>
+                                    <small>Mohali district, Punjab, India (On-site)</small>
+                                    <div class="mutual-pic"><img src="./assets/images/student/student-pic/st3.jpg">
+                                        <img src="./assets/images/student/student-pic/st4.jpg">
+                                        <img src="./assets/images/student/student-pic/st5.jpg">
+                                        <div></div><small class="mutual-text"> 2 mutual connections with the hiring team</small>
+                                    </div>
+                                    <div class="text-logo">
+                                        <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                                class="logo1">Easy Apply</span>
+                                    </div>
+                                </div>
+        
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" alt="">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+        
+                                </div>
+        
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+        
+                        </div>
+        
+                        <div class="post-space">
+        
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/hrd3.jpg" alt="">
+                                <div>
+                                    <h1>frontend Developer</h1>
+                                    <small>Contentstack</small>
+                                    <small>Mohali district, Punjab, India (On-site)</small>
+                                    <div class="mutual-pic"><img src="./assets/images/student/student-pic/st1.jpg">
+                                        <img src="./assets/images/student/student-pic/st4.jpg">
+                                        <div></div><small class="mutual-text"> 3 mutual connections with the hiring team</small>
+                                    </div>
+                                    <div class="text-logo">
+                                        <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                                class="logo1">Easy Apply</span>
+                                    </div>
+                                </div>
+        
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" alt="">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+        
+                                </div>
+        
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+        
+                        </div>
+        
+                        <div class="post-space">
+        
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/hrd4.jpg" alt="">
+                                <div>
+                                    <h1>php Developer</h1>
+                                    <small>Contentstack</small>
+                                    <small>Mohali district, Punjab, India (On-site)</small>
+                                    <div class="mutual-pic"><img src="./assets/images/student/student-pic/st1.jpg">
+                                        <img src="./assets/images/student/student-pic/st2.jpg">
+                                        <img src="./assets/images/student/student-pic/st4.jpg">
+                                        <div></div><small class="mutual-text"> 3 mutual connections with the hiring team</small>
+                                    </div>
+                                    <div class="text-logo">
+                                        <small class="green"> 7 hours ago</small> <span><img src="./assets/images/logo.png"
+                                                class="logo1">Easy Apply</span>
+                                    </div>
+                                </div>
+        
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" alt="">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+        
+                                </div>
+        
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                                <!-- <p>Sort by: <span>top <img src="./assets/images/down-arrow.png" alt=""></span></p> -->
+                            </div>
+        
+                        </div>
+                        <!-- --------  recomnded second job------------- -->
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/r7.jpg" alt="">
+                                <div>
+                                    <h1>
+                                        Web Developer</h1>
+                                    <small>GalaxE.Solutions</small>
+                                    <small>Bengaluru, Karnataka, India (Hybrid)</small>
+                                    <small class="green"> 8 hours ago</small>
+                                </div>
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" class="eye">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                            </div>
+
+                        </div>
+                        <!-- _____________ recomnded third job_________________ -->
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/r8.jpg" alt="">
+                                <div>
+                                    <h1>Software Engineer I - Frontend/Fullstack</h1>
+                                    <small>Contentstack</small>
+                                    <small>Mumbai, Maharashtra, India (Remote)</small>
+                                    <small class="green"> 7 hours ago</small>
+                                </div>
+
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" alt="">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+
+                                </div>
+
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+
+                            </div>
+
+                        </div>
+                        <!-- --------  recomnded fourth job------------- -->
+                        <div class="post-space">
+
+                            <div class="post-author">
+                                <img src="./assets/images/recommend-job/r9.jpg" alt="">
+                                <div>
+                                    <h1>
+                                        Web Developer</h1>
+                                    <small>GalaxE.Solutions</small>
+                                    <small>Bengaluru, Karnataka, India (Hybrid)</small>
+                                    <small class="green"> 8 hours ago</small>
+                                </div>
+                                <div class="jobPost-icon">
+                                    <img src="./assets/images/job-icon/hidden.png" class="eye">
+                                    <img src="./assets/images/job-icon/myjob.PNG" alt="">
+                                </div>
+                            </div>
+                            <div class="sort-by">
+                                <hr>
+                            </div>
+
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="./assets/images/user-3.png" alt="">
+                    <div>
+                        <h1>Benjamin Leo</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi dolor officia asperiores culpa
+                    molestiae quisquam placeat repellendus facere mollitia!</p>
+                <img src="./assets/images/post-image-1.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="./assets/images/thumbsup.png" alt="">
+                        <img src="./assets/images/love.png" alt="">
+                        <img src="./assets/images/clap.png" alt="">
+                        <span class="like-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./assets/images/user-1.png" class="post-activity-user-icon">
+                        <img src="./assets/images/down-arrow.png" class="post-activity-droup-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+       
+            
+            
+            <!-- -----second post------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./assets/images/user-4.png" alt="">
+                    <div>
+                        <h1>Priyanka Rao</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi dolor officia asperiores culpa
+                    molestiae quisquam placeat repellendus facere mollitia!</p>
+                <img src="./assets/images/post-image-2.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="./assets/images/thumbsup.png" alt="">
+                        <img src="./assets/images/love.png" alt="">
+                        <img src="./assets/images/clap.png" alt="">
+                        <span class="like-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./assets/images/user-1.png" class="post-activity-user-icon">
+                        <img src="./assets/images/down-arrow.png" class="post-activity-droup-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------Third Post ------- -->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./assets/images/user-5.png" alt="">
+                    <div>
+                        <h1> Dipti Deshmukh</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi dolor officia asperiores culpa
+                    molestiae quisquam placeat repellendus facere mollitia!</p>
+                <img src="./assets/images/post-image-3.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="./assets/images/thumbsup.png" alt="">
+                        <img src="./assets/images/love.png" alt="">
+                        <img src="./assets/images/clap.png" alt="">
+                        <span class="like-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./assets/images/user-1.png" class="post-activity-user-icon">
+                        <img src="./assets/images/down-arrow.png" class="post-activity-droup-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <!----------Fourth Post---------->
+            <div class="post">
+                <div class="post-author">
+                    <img src="./assets/images/user-2.png" alt="">
+                    <div>
+                        <h1>Pravin Patil</h1>
+                        <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi dolor officia asperiores culpa
+                    molestiae quisquam placeat repellendus facere mollitia!</p>
+                <img src="./assets/images/post-image-4.png" width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="./assets/images/thumbsup.png" alt="">
+                        <img src="./assets/images/love.png" alt="">
+                        <img src="./assets/images/clap.png" alt="">
+                        <span class="like-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="./assets/images/user-1.png" class="post-activity-user-icon">
+                        <img src="./assets/images/down-arrow.png" class="post-activity-droup-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="./assets/images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- -------right-sidebar--------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="./assets/images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High Demand for Skilled manpower</a>
+                <span>1d ago &middot; 11,934 readers</span>
+
+                <a href="#">Careers Growing horizontaly too</a>
+                <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#">Less Work for visa us more for UK</a>
+                <span>18h ago &middot; 12,934 readers</span>
+
+                <a href="#">More hiring = more confidance?</a>
+                <span>12h ago &middot; 934 readers</span>
+
+                <a href="#">Gautam Adani world third richest</a>
+                <span>1h ago &middot; 12,934 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad&middot;&middot;&middot;</small>
+                <p>Master the 5 principle of web design</p>
+                <div>
+                    <img src="./assets/images/user-1.png">
+                    <img src="./assets/images/mi-logo.png">
+                </div>
+                <b>brand and Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+
+
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accebility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+                <div class="cpyright-msg">
+                    <img src="./assets/images/logo.png">
+                    <p>Linkedup &#169; 2022 All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu")
+        }
+    </script>
+
+    <script>
+        let sidebarActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+        function toggleActivity() {
+            console.log("hello")
+            sidebarActivity.classList.toggle("open-activity");
+            if (sidebarActivity.classList.contains("open-activity")) {
+                moreLink.innerHTML = "Show less <b>-</b>";
+            }
+            else {
+                moreLink.innerHTML = "Show more <b>+</b>";
+            }
+
+        }
+    </script>
+    <script>
+        function myconnect(element) {
+
+
+            if (element.innerHTML === "Show more") {
+                element.innerHTML = "Show less"
+            }
+            else {
+                element.innerHTML = "Show more";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
